@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveDuplicateWordsTask", "RemoveDuplicateWordsTask\RemoveDuplicateWordsTask.csproj", "{17073B22-989C-429E-BD60-CC1F8FE3EFBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveDuplicateWordsTask.Tests", "RemoveDuplicateWordsTask.Tests\RemoveDuplicateWordsTask.Tests.csproj", "{92A0BDFF-B69D-40E1-982D-937BA8D8CAA7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17073B22-989C-429E-BD60-CC1F8FE3EFBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17073B22-989C-429E-BD60-CC1F8FE3EFBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17073B22-989C-429E-BD60-CC1F8FE3EFBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17073B22-989C-429E-BD60-CC1F8FE3EFBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92A0BDFF-B69D-40E1-982D-937BA8D8CAA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92A0BDFF-B69D-40E1-982D-937BA8D8CAA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92A0BDFF-B69D-40E1-982D-937BA8D8CAA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92A0BDFF-B69D-40E1-982D-937BA8D8CAA7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
