@@ -4,4 +4,4 @@
 > By word we shall mean the unit that consists only of latin alphabet characters.
 > Only following punctuation marks **(. , ! ? - : ; )** and space characters can be delimiters between words.
 
-*Topics - strings*
+*Topics - strings.*
