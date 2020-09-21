@@ -25,7 +25,7 @@ namespace RemoveDuplicateWordsTask.Tests
                     "  In  the evening, I often watch TV with my family and discuss  plans  for  next  day.");
                 yield return new TestCaseData(
                     "Test1   We are very  much alike: open-hearted, smart and merry.  That is why we have a lot of  friends. Test1 - Test1",
-                    "Test1   We are very  much alike: open-hearted, smart and merry.  That is why  have a lot of  friends. Test1 - Test1");
+                    "Test1   We are very  much alike: open-hearted, smart and merry.  That is why  have a lot of  friends.  - ");
             }
         }
 
