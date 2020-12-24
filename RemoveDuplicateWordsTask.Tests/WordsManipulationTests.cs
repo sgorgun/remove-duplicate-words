@@ -78,7 +78,7 @@ namespace RemoveDuplicateWordsTask.Tests
 
         [Test]
         [Property("Mark", 1)]
-        public void RemoveDuplicateWords_String_Is_Null_Throw_ArgumentNullException()
+        public void RemoveDuplicateWords_String_Is_Null_Throw_ArgumentException()
         {
             string source = null;
             Assert.Throws<ArgumentException>(() => WordsManipulation.RemoveDuplicateWords(ref source, false),
