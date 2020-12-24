@@ -7,7 +7,7 @@ namespace RemoveDuplicateWordsTask.Tests
     [TestFixture]
     public class WordsManipulationTests
     {
-        private static IEnumerable<TestCaseData> CaseSensetiveCases
+        private static IEnumerable<TestCaseData> CaseSensitiveCases
         {
             get
             {
@@ -32,7 +32,7 @@ namespace RemoveDuplicateWordsTask.Tests
             }
         }
 
-        private static IEnumerable<TestCaseData> CaseInsensetiveCases
+        private static IEnumerable<TestCaseData> CaseInsensitiveCases
         {
             get
             {
@@ -60,7 +60,7 @@ namespace RemoveDuplicateWordsTask.Tests
             }
         }
 
-        [TestCaseSource(nameof(CaseSensetiveCases))]
+        [TestCaseSource(nameof(CaseSensitiveCases))]
         [Property("Mark", 2)]
         public void RemoveDuplicateWordsTestsCaseSensitive(string actual, string expected)
         {
@@ -68,7 +68,7 @@ namespace RemoveDuplicateWordsTask.Tests
             Assert.AreEqual(expected, actual);
         }
 
-        [TestCaseSource(nameof(CaseInsensetiveCases))]
+        [TestCaseSource(nameof(CaseInsensitiveCases))]
         [Property("Mark", 2)]
         public void RemoveDuplicateWordsTestsCaseInsensitive(string actual, string expected)
         {
@@ -81,7 +81,7 @@ namespace RemoveDuplicateWordsTask.Tests
         public void RemoveDuplicateWords_String_Is_Null_Throw_ArgumentNullException()
         {
             string source = null;
-            Assert.Throws<ArgumentNullException>(() => WordsManipulation.RemoveDuplicateWords(ref source, false),
+            Assert.Throws<ArgumentException>(() => WordsManipulation.RemoveDuplicateWords(ref source, false),
                 message: "Source string cannot be null.");
         }
 
