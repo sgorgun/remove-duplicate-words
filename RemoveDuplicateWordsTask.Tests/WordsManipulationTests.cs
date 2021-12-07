@@ -2,6 +2,9 @@ using System;
 using System.Collections.Generic;
 using NUnit.Framework;
 
+#pragma warning disable SA1600
+#pragma warning disable CA1707
+
 namespace RemoveDuplicateWordsTask.Tests
 {
     [TestFixture]
@@ -62,7 +65,7 @@ namespace RemoveDuplicateWordsTask.Tests
 
         [TestCaseSource(nameof(CaseSensitiveCases))]
         [Property("Mark", 2)]
-        public void RemoveDuplicateWordsTestsCaseSensitive(string actual, string expected)
+        public void RemoveDuplicateWords_Tests_CaseSensitive(string actual, string expected)
         {
             WordsManipulation.RemoveDuplicateWords(ref actual, true);
             Assert.AreEqual(expected, actual);
@@ -70,7 +73,7 @@ namespace RemoveDuplicateWordsTask.Tests
 
         [TestCaseSource(nameof(CaseInsensitiveCases))]
         [Property("Mark", 2)]
-        public void RemoveDuplicateWordsTestsCaseInsensitive(string actual, string expected)
+        public void RemoveDuplicateWords_Tests_CaseInsensitive(string actual, string expected)
         {
             WordsManipulation.RemoveDuplicateWords(ref actual, false);
             Assert.AreEqual(expected, actual);
