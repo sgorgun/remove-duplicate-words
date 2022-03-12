@@ -13,7 +13,7 @@ namespace RemoveDuplicateWordsTask
         /// <param name="text">Source text.</param>
         /// <param name="caseSensitive">Defines case sensitivity.</param>
         /// <exception cref="ArgumentException">If source text is null or empty.</exception>
-        public static void RemoveDuplicateWords(ref string text, bool caseSensitive)
+        public static void RemoveDuplicateWords(ref string? text, bool caseSensitive)
         {
             throw new NotImplementedException("You need to implement this method.");
         }

@@ -2,9 +2,6 @@ using System;
 using System.Collections.Generic;
 using NUnit.Framework;
 
-#pragma warning disable SA1600
-#pragma warning disable CA1707
-
 namespace RemoveDuplicateWordsTask.Tests
 {
     [TestFixture]
@@ -65,7 +62,7 @@ namespace RemoveDuplicateWordsTask.Tests
 
         [TestCaseSource(nameof(CaseSensitiveCases))]
         [Property("Mark", 2)]
-        public void RemoveDuplicateWords_Tests_CaseSensitive(string actual, string expected)
+        public void RemoveDuplicateWords_Tests_CaseSensitive(string? actual, string? expected)
         {
             WordsManipulation.RemoveDuplicateWords(ref actual, true);
             Assert.AreEqual(expected, actual);
@@ -73,7 +70,7 @@ namespace RemoveDuplicateWordsTask.Tests
 
         [TestCaseSource(nameof(CaseInsensitiveCases))]
         [Property("Mark", 2)]
-        public void RemoveDuplicateWords_Tests_CaseInsensitive(string actual, string expected)
+        public void RemoveDuplicateWords_Tests_CaseInsensitive(string? actual, string? expected)
         {
             WordsManipulation.RemoveDuplicateWords(ref actual, false);
             Assert.AreEqual(expected, actual);
@@ -83,18 +80,18 @@ namespace RemoveDuplicateWordsTask.Tests
         [Property("Mark", 1)]
         public void RemoveDuplicateWords_String_Is_Null_Throw_ArgumentException()
         {
-            string source = null;
-            Assert.Throws<ArgumentException>(() => WordsManipulation.RemoveDuplicateWords(ref source, false),
-                message: "Source string cannot be null.");
+            string? source = null;
+            Assert.Throws<ArgumentException>(
+                () => WordsManipulation.RemoveDuplicateWords(ref source, false), message: "Source string cannot be null.");
         }
 
         [Test]
         [Property("Mark", 1)]
         public void RemoveDuplicateWords_String_Is_Empty_Throw_ArgumentException()
         {
-            string source = string.Empty;
-            Assert.Throws<ArgumentException>(() => WordsManipulation.RemoveDuplicateWords(ref source, false),
-                message: "Source string cannot be empty.");
+            string? source = string.Empty;
+            Assert.Throws<ArgumentException>(
+                () => WordsManipulation.RemoveDuplicateWords(ref source, false), message: "Source string cannot be empty.");
         }
     }
 }
